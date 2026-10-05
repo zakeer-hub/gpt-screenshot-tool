@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GPT Screenshot Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="logo">📸</div>
+
+            <h1>GPT Screenshot Tool</h1>
+
+            <p class="subtitle">
+                Send screenshots directly to your ChatGPT conversation.
+            </p>
+
+            <label for="targetUrl">
+                ChatGPT Conversation URL
+            </label>
+
+            <input
+                type="url"
+                id="targetUrl"
+                placeholder="https://chatgpt.com/c/..."
+            >
+
+            <button id="connectBtn">
+                Connect Conversation
+            </button>
+
+            <div id="status" class="status">
+                ⚪ Not connected
+            </div>
+
+            <div class="shortcut">
+                <span>Screenshot shortcut</span>
+                <kbd>Ctrl</kbd>
+                <kbd>Shift</kbd>
+                <kbd>Y</kbd>
+            </div>
+            <div class="preview">
+    <p>Latest Screenshot</p>
+
+    <img
+        id="screenshotPreview"
+        alt="Latest screenshot"
+    >
+</div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

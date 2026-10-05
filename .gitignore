@@ -1,0 +1,7 @@
+chrome-profile/
+temp_screenshot.jpg
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
